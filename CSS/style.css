@@ -1,5 +1,6 @@
-body{
+ body{
     background-color: rgb(159, 69, 69);
+    color: #fff;
     /* rgb(172, 96, 96) */
 }
 
@@ -22,13 +23,6 @@ button:active{
     filter: brightness(80%);
 }
 
-.pomodoro{
-    background-color: #650000;
-    border-radius: 5px;
-    
-}
-
-
 
 .button_menu{
     background-color: rgb(172, 96, 96);
@@ -48,6 +42,11 @@ button:active{
     padding: 5px 15px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 21px;
+}
+
+.pomodoro{
+    background-color: #650000;
 }
 
 /* Posebna klasa samo za ono dugme koje je trenutno izabrano */
@@ -61,11 +60,24 @@ header{
     justify-content: space-between; 
     align-items: center;
     /* padding: 10px 10px; */
-    border-bottom: 1px solid #650000;
-    margin-bottom: 40px;
+    border-bottom: 1px solid #6500003b;
 }
 
+.main_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.main{
+    padding: 40px 70px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .header_menu{
     list-style: none;
@@ -79,31 +91,23 @@ header{
 
 .main_section{
     background-color: rgb(172, 96, 96);
-    margin-left: 70px;
-    margin-right: 70px;
+    /* margin-left: 70px;
+    margin-right: 70px; */
     border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 0;
 }
 
 .main_menu{
-    list-style: none;
     display: flex;
     justify-content: center;
     gap: 10px;
     
-}
-
-.main_button_menu{
-    background-color: rgb(172, 96, 96);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    
-}
-
-.pomodoro_text{
-    padding: 10px;
-     border-radius: 15px;
-
 }
 
 .timer{
@@ -111,13 +115,7 @@ header{
     justify-content: center;
 }
 
-.start_button_div{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    font-size: large;
-}
+
 
 .start_button{
     font-size: 30px;
@@ -128,8 +126,7 @@ header{
 }
 
 .number_1{
-    display: flex ;
-    justify-content: center;
+    text-align: center;
     color: rgb(212, 115, 115);
     margin-top: 25px;
     margin-bottom: 5px;
@@ -141,8 +138,8 @@ header{
 }
 
 .time_to_focus{
-    display: flex ;
-    justify-content: center;
+    /* display: flex ;
+    justify-content: center; */
     color: #fff;
     font-size: 25px;
     
@@ -153,8 +150,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid white;
-    margin: 0 70px 20px 70px;
-
+    width: 100%;
 }
 
 
@@ -184,8 +180,9 @@ header{
 }
 
 .add_task{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
 }
 
 .add_task :hover{
@@ -200,7 +197,7 @@ header{
     font-size: 20px;
     width: 100%;
     height: 80px;
-    margin: 0 70px 0 70px;
+    /* margin: 0 70px 0 70px; */
     border-radius: 15px;
     
     

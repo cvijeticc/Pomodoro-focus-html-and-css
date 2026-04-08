@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <h1 class = "default_look">Pomofocus</h1>
+        <h1 class="default_look">Pomofocus</h1>
         <nav>
 
-            <ul class = "header_menu">
+            <ul class="header_menu">
 
                 <li><button class = "button_menu" >Report</button></li>
                 <li><button class = "button_menu">Setting</button></li>
@@ -21,30 +21,44 @@
 
         </nav>
     </header>
-    <section class = "main_section">
+    <div class="main_wrapper">
+        <main class="main">
+        <section class = "main_section">
 
-        <ul class = "main_menu">
+        <div class = "main_menu">
 
-            <li><button class = "main_button_menu"><h2  class = "pomodoro"><div class = "pomodoro_text">Pomodoro</div></h2></button></li>
-            <li><button class = "main_button_menu"><h2><div class = "pomodoro_text">Short Break</div></h2></button></li>
-            <li><button class = "main_button_menu"><h2><div class = "pomodoro_text">Long Break</div></h2></button></li>
+            
+                <button class = "main_button_menu pomodoro">
+                    Pomodoro
+                </button>
+            
+            <button class = "main_button_menu">
+                Short Break
+            </button>
+            <button class = "main_button_menu">
+                Long Break
+            </button>
 
-        </ul>
+        </div>
 
         <span class = "timer">25:00</span>
-
-       
-
-        <div class = "start_button_div"><button class = "start_button" >START</button></div>
+        
+            <button class = "start_button" >
+                START
+            </button>
 
     </section>
-    <span class = "number_1">#1</span>
-    <span class = "time_to_focus">Time to focus!</span>
-    <section class = "lower_section">
+    <div>
+        <div class = "number_1">#1</div>
+        <div class = "time_to_focus">Time to focus!</div>
+    </div>
+    <div class = "lower_section">
         <span class = "tasks">Tasks</span>
         <span class = "three_dots"><button class = "three_dots_button"><span class ="three_dots_clean">⋮</span></button></span>
-    </section>
+    </div>
     <div class = "add_task"><button class = "add_task_button"><span>Add Task</span></button></div>
+    </main>
+    </div>
     
 </body>
 </html>
